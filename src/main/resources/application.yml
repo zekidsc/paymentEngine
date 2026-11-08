@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+fintech:
+  gateway:
+    timeout-ms: 5000
+    providers:
+      garanti:
+        enabled: true
+        api-url: "https://api.garantibbva.com.tr/v1/pos"
+        merchant-id: "GR_MERCHANT_1001"
+        terminal-id: "GR_TERM_9001"
+      yapikredi:
+        enabled: true
+        api-url: "https://pos.yapikredi.com.tr/api/v2"
+        merchant-id: "YK_POS_5502"
+        terminal-id: "YK_TERM_4402"
+      akbank:
+        enabled: true
+        api-url: "https://sanalpos.akbank.com/service"
+        merchant-id: "AK_MERCHANT_7788"
+        terminal-id: "AK_TERM_3321"
